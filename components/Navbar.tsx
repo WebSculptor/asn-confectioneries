@@ -33,12 +33,11 @@ const paths = [
 
 const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
-
-  const isCart: boolean = false;
+  const [isCardOpen, setIsCardOpen] = useState<boolean>(false);
 
   return (
     <>
-      <MaxContainer className="p-3 backdrop-blur-0 bg-milk md:bg-none md:backdrop-blur-lg flex items-center justify-between sticky top-0">
+      <MaxContainer className="p-3 backdrop-blur-lg flex items-center justify-between sticky top-0">
         <Logo src="/light-2.png" color="text-brown" />
 
         <ul className="hidden md:flex items-center space-x-4">
@@ -55,8 +54,11 @@ const Navbar = () => {
         </ul>
 
         <div className="flex items-center justify-end space-x-3 w-40">
-          <div className="w-fit h-fit relative pointer flex items-center justify-center">
-            {isCart && (
+          <div
+            className="w-fit h-fit relative pointer flex items-center justify-center"
+            onClick={() => setIsCardOpen(!isCardOpen)}
+          >
+            {isCardOpen && (
               <span className="w-4 h-4 rounded-full absolute -top-1.5 -right-1.5 bg-red-600 border-[3px] border-[#FFF4F6]"></span>
             )}
             <ShoppingCart className="w-6 h-6 text-brown" />
