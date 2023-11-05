@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <>
-      <MaxContainer className="p-3 backdrop-blur-lg flex items-center justify-between sticky top-0">
+      <MaxContainer className="p-3 backdrop-blur-0 bg-milk md:bg-none md:backdrop-blur-lg flex items-center justify-between sticky top-0">
         <Logo src="/light-2.png" color="text-brown" />
 
         <ul className="hidden md:flex items-center space-x-4">
