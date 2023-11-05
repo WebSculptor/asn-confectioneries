@@ -1,6 +1,13 @@
+import { Open_Sans } from "next/font/google";
 import Image from "next/image";
 
 import MaxContainer from "@/components/MaxContainer";
+import { cn } from "@/lib/utils";
+
+const inter = Open_Sans({
+  subsets: ["latin"],
+  weight: "700",
+});
 
 export default function Home() {
   return (
@@ -8,7 +15,12 @@ export default function Home() {
       <p className="text-xs md:text-sm text-brown my-2">
         ENJOY A HIGH-CALIBER GASTRONOMIC EXPERIENCE
       </p>
-      <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl max-w-5xl my-2 text-brown">
+      <h1
+        className={cn(
+          "font-bold text-3xl md:text-4xl lg:text-5xl max-w-5xl my-2 text-brown",
+          inter.className
+        )}
+      >
         ASN Confectioneries, For moments that need a touch of sweetness.
       </h1>
       <p className="text-sm xl:text-xl text-brown font-medium max-w-3xl w-full">
