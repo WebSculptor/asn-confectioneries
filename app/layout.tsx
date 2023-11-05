@@ -13,7 +13,10 @@ const varela_round = Varela_Round({
 export const metadata: Metadata = {
   title: "ASN Confectioneries - For moments that need a touch of sweetness.",
   description:
-    "Established with a passion for crafting unforgettable confectionery experiences, ASN Confectioneries is a haven for those with an insatiable sweet tooth. We pride ourselves on our commitment to using only the finest, hand-selected ingredients, ensuring that every bite is a symphony of flavor and texture. From rich, velvety chocolates to delicate, flaky pastries, our diverse range of treats is meticulously crafted to tantalize the taste buds and leave a lasting impression. With a dedication to artistry and a penchant for perfection, ASN Confectioneries invites you to immerse yourself in a world of exquisite sweetness and unparalleled culinary craftsmanship.",
+    "ASN Confectioneries is a confectionery shop dedicated to creating unforgettable experiences for sweet tooth enthusiasts. They use only the finest ingredients, ensuring every bite is a symphony of flavor and texture.",
+  icons: {
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
