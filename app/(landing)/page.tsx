@@ -12,7 +12,7 @@ const inter = Open_Sans({
 export default function Home() {
   return (
     <MaxContainer className="w-full flex items-center max-w-8xl flex-col pt-14 md:pt-28 gap-y-2 text-center">
-      <p className="text-xs md:text-sm text-brown my-2">
+      <p className="text-xs md:text-sm text-brown px-4 py-1.5 rounded-full bg-white shadow-md md:p-0 md:bg-transparent md:shadow-none">
         ENJOY A HIGH-CALIBER GASTRONOMIC EXPERIENCE
       </p>
       <h1

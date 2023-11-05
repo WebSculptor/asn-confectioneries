@@ -4,6 +4,7 @@ import { Varela_Round } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const varela_round = Varela_Round({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={cn("bg-milk", varela_round.className)}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
