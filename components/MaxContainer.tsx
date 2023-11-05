@@ -8,7 +8,7 @@ interface MaxContainerProps {
 
 const MaxContainer = ({ children, className }: MaxContainerProps) => {
   return (
-    <div className={cn("mx-auto w-full px-1 max-w-6xl", className)}>
+    <div className={cn("mx-auto w-full px-2 max-w-6xl", className)}>
       {children}
     </div>
   );

@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <>
-      <MaxContainer className="p-2 md:p-3 backdrop-blur-0 bg-milk md:bg-none md:backdrop-blur-lg flex items-center justify-between sticky top-0">
+      <MaxContainer className="p-3 backdrop-blur-0 bg-milk md:bg-none md:backdrop-blur-lg flex items-center justify-between sticky top-0">
         <Logo src="/light-2.png" color="text-brown" />
 
         <ul className="hidden md:flex items-center space-x-4">
@@ -73,10 +73,10 @@ const Navbar = () => {
 
       <div
         className={cn(
-          "fixed top-16 flex md:hidden max-w-md w-[calc(100%-95px)] border border-r-0 border-[#442a00] rounded-xl rounded-r-none p-3 z-10 bg-milk shadow-lg transition-all",
+          "fixed top-[74px] flex md:hidden max-w-md w-[calc(100%-95px)] border border-r-0 border-[#442a00] rounded-xl rounded-r-none p-3 z-10 bg-milk shadow-lg transition-all",
           {
-            "-right-full": isMenuActive === true,
-            "right-0": isMenuActive !== true,
+            "-right-full": isMenuActive !== true,
+            "right-0": isMenuActive === true,
           }
         )}
       >
